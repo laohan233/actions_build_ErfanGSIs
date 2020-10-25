@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/flame-rp1a.200720.009-factory-1c9d4fcf.zip
-  ROM_NAME: Pixel for Android 11
+  ROM_URL: https://download.h2os.com/OnePlus7/MP/OnePlus7Hydrogen_14.H.29_OTA_029_all_2009152119_55f5566b0019459d.zip
+  ROM_NAME: OxygenOS for Android 10
   TZ: Asia/Shanghai
 
 jobs:
