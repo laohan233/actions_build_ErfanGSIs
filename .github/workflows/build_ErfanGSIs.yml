@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.h2os.com/OnePlus7/MP/OnePlus7Hydrogen_14.H.29_OTA_029_all_2009152119_55f5566b0019459d.zip
-  ROM_NAME: OxygenOS for Android 10
+  ROM_URL: http://download.h2os.com/OnePlus8/OBT/OnePlus8Hydrogen_15_OTA_0120_all_2009181217_f6965f9cd37043a3.zip
+  ROM_NAME: Pixel for Android 11
   TZ: Asia/Shanghai
 
 jobs:
