@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/OnePlus8/OBT/OnePlus8Hydrogen_15_OTA_0120_all_2009181217_f6965f9cd37043a3.zip
-  ROM_NAME: Pixel for Android 11
+  ROM_URL: https://ws28.cn/f/3vh8ncrqjnw
+  ROM_NAME: MIUI for Android 10
   TZ: Asia/Shanghai
 
 jobs:
