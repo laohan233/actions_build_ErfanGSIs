@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://ws28.cn/f/3vh8ncrqjnw
+  ROM_URL: https://www.wenshushu.cn/f/3vh8ncrqjnw/RedmiK30-20201030-20.10.30-11-f97dc1c0-Simplicity-Auto.zip
   ROM_NAME: MIUI for Android 10
   TZ: Asia/Shanghai
 
