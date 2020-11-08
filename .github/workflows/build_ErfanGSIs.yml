@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.11.3/miui_LAVENDER_20.11.3_171d79166b_10.0.zip
-  ROM_NAME: MIUI For Android 10
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/note9/8.20.11.3/cn_daily/20201103044846/3bf9cb9b/update.zip
+  ROM_NAME: Flyme For Android 10
   TZ: Asia/Shanghai
 
 jobs:
