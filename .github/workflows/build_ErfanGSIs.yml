@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD1824_A_1.19.4-update-full_1571901865.zip
+  ROM_URL: http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD1813_A_5.12.9-update-full_1600255381.zip
   ROM_NAME: MIUI For Android 10
   TZ: Asia/Shanghai
 
