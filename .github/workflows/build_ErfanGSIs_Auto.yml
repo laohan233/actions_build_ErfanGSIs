@@ -1,5 +1,4 @@
-name: build_ErfanGSIs h2os by oneplus7T
-
+name:  Auto_ErfanGSIs BY 老韩（SyarLight Team）
 on:
 #  release:
 #    types: [published]
@@ -14,8 +13,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/OnePlus7T/MP/OnePlus7THydrogen_14.H.15_OTA_015_all_2009152127_05b370f71d654dff.zip
-  ROM_NAME: OxygenOS For Android 10
+  ROM_URL: http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD1913_A_1.12.1-update-full_1600341053.zip
+  ROM_NAME: OxygenOS For Android 9
   TZ: Asia/Shanghai
 
 jobs:
