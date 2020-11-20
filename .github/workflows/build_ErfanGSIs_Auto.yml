@@ -1,4 +1,4 @@
-name:  Auto_ErfanGSIs BY 老韩（SyarLight Team）
+name:  Auto_ErfanGSIs BY 老韩（SyarLight）
 on:
 #  release:
 #    types: [published]
@@ -13,8 +13,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD1913_A_1.12.1-update-full_1600341053.zip
-  ROM_NAME: OxygenOS For Android 9
+  ROM_URL: https://hugeota.d.miui.com/20.11.19/miui_LAVENDER_20.11.19_35b6e5c2ca_10.0.zip
+  ROM_NAME: MIUI For Android 10
   TZ: Asia/Shanghai
 
 jobs:
@@ -53,12 +53,12 @@ jobs:
        - name: Download Rom/下载ROM & Generate A/B GSI/制作A/B Erfangsi
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
-       - name: Zip GSI /打包GSI
+       - name: 7Z GSI /打包GSI
          run: |
               mkdir final
-              zip -r final/GSI.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/GSI_Auto-in-Github_by老韩.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        
        - name: Upload GSI to WeTransfer/下载地址为WeTransfer
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet final/GSI.zip
+              ./transfer wet final/GSI_Auto-in-Github_by老韩.7z
