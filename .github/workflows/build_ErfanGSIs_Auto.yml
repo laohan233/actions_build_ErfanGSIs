@@ -13,8 +13,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://pan.yjsn.club/api/files/onedrive/blue/%E5%9B%BD%E5%86%85%E7%A8%B3%E5%AE%9A%E7%89%88(%E6%9C%80%E6%96%B0%E7%89%88)/RedmiNote7_MIUI12_V12.0.2.0_10.0_BlueHill_0575d47c99.zip
-  ROM_NAME: MIUI For Android 10
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/note9/8.20.6.30/cn_beta/20200715101816/abb20c82/update.zip
+  ROM_NAME: Flyme For Android 10
   TZ: Asia/Shanghai
 
 jobs:
