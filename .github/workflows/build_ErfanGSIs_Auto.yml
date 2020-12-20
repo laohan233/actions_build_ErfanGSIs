@@ -14,6 +14,7 @@ on:
     
 env:
   ROM_URL: http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD2012_A_1.9.2-update-full_1600412774.zip
+  ROM_NAME: Pixel For Android 10
   TZ: Asia/Shanghai
 
 jobs:
