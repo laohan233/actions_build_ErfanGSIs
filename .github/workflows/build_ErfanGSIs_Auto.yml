@@ -13,7 +13,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL:http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD2024_A_1.19.6-update-full_1600936527.zip
+  ROM_URL: http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD2024_A_1.19.6-update-full_1600936527.zip
   TZ: Asia/Shanghai
 
 jobs:
