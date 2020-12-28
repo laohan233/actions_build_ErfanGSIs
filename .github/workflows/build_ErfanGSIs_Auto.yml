@@ -13,8 +13,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD2012_A_1.9.2-update-full_1600412774.zip
-  ROM_NAME: Pixel For Android 10
+  ROM_URL: https://bigota.d.miui.com/20.12.26/miui_TUCANA_20.12.26_3c94dcaa50_11.0.zip
+  ROM_NAME: Pixel For Android 11
   TZ: Asia/Shanghai
 
 jobs:
