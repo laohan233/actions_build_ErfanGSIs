@@ -13,7 +13,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://ip4109819256.mobgslb.tbcache.com/Firmware/Flyme/note9/8.20.6.30/cn_beta/20200715101816/abb20c82/update.zip?ali_redirect_domain=firmware.meizu.com&ali_redirect_ex_ftag=dcaf609d0db679e4b9531ebd7f1f1562220d3e9432fedbd3&ali_redirect_ex_tmining_ts=1611566419&ali_redirect_ex_tmining_expire=3600&ali_redirect_ex_hot=100
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/note9/8.20.6.30/cn_beta/20200715101816/abb20c82/update.zip
   ROM_NAME: Flyme For Android 10
   TZ: Asia/Shanghai
 
