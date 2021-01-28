@@ -13,8 +13,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/note9/8.20.6.30/cn_beta/20200715101816/abb20c82/update.zip
-  ROM_NAME: Flyme For Android 10
+  ROM_URL: http://download.h2os.com/OnePlus7/OBT/OnePlus7Hydrogen_13.X.55_OTA_0550_all_2101102318_4421ccf356ea4ad2.zip
+  ROM_NAME: Pixel For Android 11
   TZ: Asia/Shanghai
 
 jobs:
