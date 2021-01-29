@@ -1,5 +1,4 @@
-name: build_ErfanGSIs
-
+name:  Auto_ErfanGSIs BY 幻（starLight）
 on:
 #  release:
 #    types: [published]
@@ -14,8 +13,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/5T/MP/OnePlus5THydrogen_43_OTA_064_all_2009080056_338a836209c54a7e.zip
-  ROM_NAME: OxygenOS
+  ROM_URL: https://down.ws59.cn/0cgi9gu/4/jw/4jwl0cgi9gu?cdn_sign=1611891127-21-0-089398f4349227724c4f8b81b20e36f1&exp=9600&response-content-disposition=attachment%3B%20filename%3D%22harmony2.0beta.zip%22%3B%20filename%2A%3Dutf-8%27%27harmony2.0beta.zip
+  ROM_NAME: Pixel For Android 10
   TZ: Asia/Shanghai
 
 jobs:
@@ -30,7 +29,7 @@ jobs:
        - name: Clean Up
          run: |
            docker rmi `docker images -q`
-           sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
+           sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d 
            sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
            sudo -E apt-get update
            sudo -E apt-get -y autoremove --purge
@@ -41,27 +40,25 @@ jobs:
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
        
-       - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
+       - name: Clone Source Code
+         run: git clone --recurse-submodules https://github.com/laohan233/ErfanGSIs.git
        
        - name: Setting up ErfanGSI requirements
          run: |
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
               sudo bash setup.sh
+              sudo sed -i '7c AB=true' url2GSI.sh
+              sudo sed -i '8c Aonly=false' url2GSI.sh
+       - name: Download Rom/下载ROM & Generate A/B GSI/制作A/B ErfanGSI 
+         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME AB
        
-       - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
-       
-       - name: Zip GSI  
+       - name: ZIP GSI /打包GSI
          run: |
               mkdir final
-              zip -r final/GSI.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/GSI_Auto-in-Github_by幻.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        
-       - name: Upload GSI to BitSend
+       - name: Upload GSI to WeTransfer/下载地址为WeTransfer
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer bit final/GSI.zip
-
-         
-            
+              ./transfer wet final/GSI_Auto-in-Github_幻.zip
