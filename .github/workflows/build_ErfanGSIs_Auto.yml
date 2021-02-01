@@ -13,7 +13,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/OnePlus7/OBT/OnePlus7Hydrogen_13.X.55_OTA_0550_all_2101102318_4421ccf356ea4ad2.zip
+  ROM_URL: https://hugeota.d.miui.com/21.1.28/miui_GAUGUIN_21.1.28_917b166068_11.0.zip
   ROM_NAME: Pixel For Android 11
   TZ: Asia/Shanghai
 
